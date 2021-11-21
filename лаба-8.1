@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    float x, r;
+    int s;
+    printf("Введите размер файла в байтах: ");
+    scanf("%f", &x);
+    r = x / 1024;
+    if (r > (int)r )
+    {
+        s = (int)r + 1;
+        printf("Размер файлa в кuлoбайтах: %d", s);
+    }
+    else
+    {
+        s = (int)r;
+        printf("Размер файлa в кuлoбайтах: %d", s);
+    }
+    return 0;
+}
