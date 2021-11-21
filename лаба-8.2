@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    float a, b;
+    int r;
+    printf("Введите целые положительные числа A и B (A > B): ");
+    scanf("%f%f", &a, &b);
+    if ((a > (int)a) || (b > (int)b) || (b >= a))
+    {
+        printf("Числа не соответствуют условию.");
+    }
+    else
+    {
+        r = (int)a / b;
+        printf("Столько раз отрезок длиной B разместится на отрезке A: %d", r);
+    }
+    return 0;
+}
